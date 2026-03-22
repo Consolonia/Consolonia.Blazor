@@ -1,7 +1,4 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Interactivity;
 
 namespace Example.Blazor
 {
@@ -10,12 +7,6 @@ namespace Example.Blazor
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void OnExit(object sender, RoutedEventArgs e)
-        {
-            var lifetime = Application.Current!.ApplicationLifetime as IControlledApplicationLifetime;
-            lifetime!.Shutdown();
         }
     }
 }
