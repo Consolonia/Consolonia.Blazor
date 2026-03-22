@@ -1,12 +1,13 @@
 <local:App xmlns="https://github.com/avaloniaui"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-           x:Class="Example.Blazor.App"
+           xmlns:console="https://github.com/consolonia"
+           xmlns:themes="using:Consolonia.ManagedWindows"
            xmlns:local="using:Example.Blazor"
-           xmlns:console="https://github.com/jinek/consolonia"
-           RequestedThemeVariant="Default">
+           x:Class="Example.Blazor.App">
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
-    <local:App.Styles>
+    <Application.Styles>
         <console:ModernTheme />
-    </local:App.Styles>
+        <themes:AutoManagedWindowStyles />
+    </Application.Styles>
 </local:App>

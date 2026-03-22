@@ -9,4 +9,7 @@
         <ProjectReference Include="..\Consolonia.Blazor\Consolonia.Blazor.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Consolonia.ManagedWindows" Version="11.3.9" />
+    </ItemGroup>
 </Project>
