@@ -1,0 +1,7 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:console="https://github.com/consolonia"
+        xmlns:pages="using:Example.Blazor.Components"
+        x:Class="Example.Blazor.MainWindow">
+    <console:NavigationControl x:TypeArguments="pages:MainPage"/>
+</Window>

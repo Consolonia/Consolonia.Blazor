@@ -1,10 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Consolonia.ManagedWindows" Version="11.3.9" />
+    </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Consolonia.Blazor\Consolonia.Blazor.csproj" />
