@@ -8,8 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 // ReSharper disable once CheckNamespace
 namespace Consolonia.Blazor
 {
-    public class NavigationControl<PageT> : BlazoniaNavigationControl<PageT> 
-        where PageT : IComponent
+    public class NavigationControl<TPage> : BlazoniaNavigationControl<TPage> 
+        where TPage : IComponent
     {
         public override void ConfigureServices(IServiceCollection services)
         {
