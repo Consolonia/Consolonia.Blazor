@@ -3,5 +3,5 @@
         xmlns:console="https://github.com/consolonia"
         xmlns:pages="using:Example.Blazor.Components"
         x:Class="Example.Blazor.MainWindow">
-    <console:NavigationControl x:TypeArguments="pages:MainPage"/>
+    <console:NavigationControl x:TypeArguments="pages:MainPage" />
 </Window>

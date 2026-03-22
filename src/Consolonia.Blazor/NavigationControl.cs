@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 // ReSharper disable once CheckNamespace
 namespace Consolonia.Blazor
 {
-    public class NavigationControl<TPage> : BlazoniaNavigationControl<TPage> 
+    public class NavigationControl<TPage> : BlazoniaNavigationControl<TPage>
         where TPage : IComponent
     {
         public override void ConfigureServices(IServiceCollection services)
@@ -44,6 +44,5 @@ namespace Consolonia.Blazor
             services.AddTransient(sp =>
                 sp.GetRequiredService<ConsoloniaLifetime>().MainWindow!.PlatformSettings);
         }
-
     }
 }
