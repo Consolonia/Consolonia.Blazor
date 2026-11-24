@@ -6,17 +6,18 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <ConsoloniaVersion>11.3.12</ConsoloniaVersion>
+        <ConsoloniaVersion>12.1.4</ConsoloniaVersion>
         <ConsoloniaVersionLatest>$(ConsoloniaVersion).*</ConsoloniaVersionLatest>
         <!--If ran not by pipeline - defining for local run-->
         <BUILD_VERSION Condition="'$(BUILD_VERSION)' == ''">0</BUILD_VERSION>
         <VersionPrefix>$(ConsoloniaVersion).$(BUILD_VERSION)</VersionPrefix>
 
-        <AvaloniaVersion>11.3.12</AvaloniaVersion>
+        <AvaloniaVersion>12.1.4</AvaloniaVersion>
+        <AvaloniaControlsDataGridVersion>12.0.0</AvaloniaControlsDataGridVersion>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Authors>https://github.com/consolonia/consolonia/graphs/contributors</Authors>
+        <Authors>jinek;tomlm</Authors>
         <Copyright>© 2021–2025 Evgeny Gorbovoy &amp; Tom Laird-McConnell</Copyright>
         <ProjectUrl>https://github.com/consolonia/consolonia</ProjectUrl>
         <RepositoryUrl>https://github.com/consolonia/consolonia</RepositoryUrl>
